@@ -29,11 +29,11 @@ public class Condition : MonoBehaviour
 
     public void Add(float Value)
     {
-        curValue = Mathf.Min(curValue + Value, maxValue);  // Mathf.Min : µÎ ÀÎÀÚ °ª Áß ÀÛÀº °ªÀ» ¹ÝÈ¯
+        curValue = Mathf.Min(curValue + Value, maxValue);  // Mathf.Min : ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
     }
 
     public void Subtract(float Value)
     {
-        curValue = Mathf.Max(curValue - Value, 0);  // Mathf.Max : µÎ ÀÎÀÚ °ª Áß Å« °ªÀ» ¹ÝÈ¯
+        curValue = Mathf.Max(curValue - Value, 0);  // Mathf.Max : ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ Å« ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
     }
 }
