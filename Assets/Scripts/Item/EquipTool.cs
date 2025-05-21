@@ -16,11 +16,13 @@ public class EquipTool : Equip
 
 	private Animator _animator;
 	private Camera _camera;
+	private NPC _npc;
 
     void Start()
     {
         _animator = GetComponent<Animator>();
 		_camera = Camera.main;
+		_npc = GetComponent<NPC>();
     }
 
     public override void OnAttackInput()
@@ -51,8 +53,11 @@ public class EquipTool : Equip
 			if (doesGatherResources && hit.collider.TryGetComponent(out Resource resource))
 			{
 				resource.Gather(hit.point, hit.normal);
-				
 			}
+			else if (hit.collider.CompareTag("Enemy") && hit.collider.gameObject.TryGetComponent(out IDamagable damaged))
+			{
+				damaged.TakePhysicalDamage(damage);
+            }
 		}
 	}
 }
