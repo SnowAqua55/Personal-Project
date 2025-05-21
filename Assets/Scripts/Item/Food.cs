@@ -12,10 +12,4 @@ public class Food : MonoBehaviour
     // 1. 음식에 스크립트 달고 인스펙터에서 효과 지정해 줘야 하니 그거 띄워줄 변수 선언
     // 2. 
 
-    public void
-
-    public void OverTimeFood()
-    {
-        
-    }
 }

@@ -12,12 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e3a036f0121c1746ad6b2ddba28db00, type: 3}
   m_Name: Item_Apple
   m_EditorClassIdentifier: 
-  displayName: 
-  description: 
-  type: 0
-  icon: {fileID: 0}
-  dropPrefab: {fileID: 0}
+  displayName: "\uC0AC\uACFC"
+  description: "\uD754\uD558\uC9C0\uB9CC \uB9DB\uC788\uB294 \uC5F4\uB9E4\uC785\uB2C8\uB2E4."
+  type: 1
+  icon: {fileID: 21300000, guid: ba9cecb9ee4923d4ab3cf18a4d7a3478, type: 3}
+  dropPrefab: {fileID: 7213551532041529669, guid: 0637279b37a62a94c9ddb1ce2990cc32, type: 3}
   canStack: 0
   maxStackAmount: 0
-  consumables: []
+  consumables:
+  - type: 0
+    value: 0
+  - type: 1
+    value: 0
   equipPrefab: {fileID: 0}

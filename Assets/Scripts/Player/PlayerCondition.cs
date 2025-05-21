@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.XR;
 
 public interface IDamagable
 {
@@ -31,6 +32,11 @@ public class PlayerCondition : MonoBehaviour, IDamagable
         if (health.curValue <= 0f)
         {
             Die();
+        }
+
+        if (hunger.curValue > hunger.maxValue * (70f / 100f))
+        {
+            health.Add(health.maxValue * (1f / 100f));
         }
     }
 
